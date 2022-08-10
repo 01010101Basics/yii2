@@ -9,6 +9,7 @@ $this->title = 'Thanks';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
-<h3>It was awesome to Worship with you today, and it is our prayer that you felt welcome at Awaken.</h3>
+<h1>So Glad You Came!</h1>
+<h6>We hope your worship experience was dynamic, and that you encountered the Holy Spirit, most of all that you felt welcome here at Awaken LA Church.</h6>
 <p>Thanks for sharing your information, we are excited to what is ahead, and we are looking forward to seeing you again!</p>
 </div>

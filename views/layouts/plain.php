@@ -16,6 +16,36 @@ AppAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
+    <style type="text/css">
+        body {
+  background: url(<?php echo $this->theme->baseUrl ?>/assets/images/ala_background_cropped.jpg) no-repeat top center #1b1919;
+}
+form {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: lightgrey;
+    padding: 1em;
+}
+ .container{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: lightgrey;
+    
+}
+.footer, .myfooter {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: .9em;
+    height: 60px;
+}
+
+.footer , .myfooter > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+h1, h2, h3, h4 {
+    color: lightgrey;
+}
+
+    </style>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?php $this->registerCsrfMetaTags() ?>
@@ -34,25 +64,17 @@ AppAsset::register($this);
             'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
         ],
     ]);
+    $navItems = [
+        ['label' => 'Home', 'url' => ['site/index']],
+        ['label' => 'New Vistitor', 'url' => ['visitor/create']],
+        ['label' => 'Prayer', 'url' => ['prayers/create']],
+        ['label' => 'Events', 'url' => ['site/about']],
+        
+    ];
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
-        ],
+        'items' => $navItems,
+        
     ]);
     NavBar::end();
     ?>
@@ -68,10 +90,10 @@ AppAsset::register($this);
     </div>
 </main>
 
-<footer class="footer mt-auto py-3 text-muted">
+<footer class="myfooter">
     <div class="container">
-        <p class="float-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="float-right"><?= Yii::powered() ?></p>
+        <p class="float-left">&copy; Awaken LA Church <?= date('Y') ?></p>
+        
     </div>
 </footer>
 

@@ -1,13 +1,13 @@
 <?php
 
 use yii\helpers\Html;
-$this->context->layout = 'alternate';
+$this->context->layout = 'plain';
 /* @var $this yii\web\View */
 /* @var $model app\models\Prayers */
 
 $this->title = 'Prayer Requests';
-$this->params['breadcrumbs'][] = ['label' => 'Prayers', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+/* $this->params['breadcrumbs'][] = ['label' => 'Prayers', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title; */
 ?>
 <div class="prayers-create">
 

@@ -8,4 +8,6 @@ modules:
     enabled:
       - Asserts
       - Yii2:
+            configFile: './config/web.php'
             part: [orm, email, fixtures]
+            entryScript: index-test.php

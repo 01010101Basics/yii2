@@ -16,8 +16,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'prayer_request')->textArea() ?>
-
+    <?= $form->field($model, 'prayer_request')->textArea(['rows'=>6]) ?>
+    
+    <?= $form->field($model, 'contact')->checkBox(['label'=>'Contact Us']) ?>
     
 
     <div class="form-group">

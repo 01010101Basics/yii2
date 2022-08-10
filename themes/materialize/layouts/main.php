@@ -15,12 +15,12 @@ use yii\widgets\Breadcrumbs;
   <html>
     <head>
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="<?php echo $this->theme->baseUrl ?>/assets/css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="<?php echo $this->theme->baseUrl ?>/assets/css/style.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="<?php echo $this->theme->baseUrl ?>/assets/css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="<?php echo $this->theme->baseUrl ?>/assets/css/style.css"  media="screen,projection"/>
 
       <!--Let browser know website is optimized for mobile-->
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no"/>
     </head>
 
     <body>

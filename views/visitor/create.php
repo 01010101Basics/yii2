@@ -4,10 +4,10 @@ use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Visitor */
-$this->context->layout = 'alternate';
+$this->context->layout = 'plain';
 $this->title = 'Welcome';
-$this->params['breadcrumbs'][] = ['label' => 'Visitors', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+//$this->params['breadcrumbs'][] = ['label' => 'Visitors', 'url' => ['index']];
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="visitor-create">
 
